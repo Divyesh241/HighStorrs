@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #263238;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0, 77, 64, 0.2);
+            background-color: #e0f2f1;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: #00695c;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .image-card {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 105, 92, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 0 auto;
+        }
+
+        .image-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 105, 92, 0.4);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            padding: 15px;
+            background-color: #b2dfdb;
+            color: #37474f;
+        }
+
+        .image-caption h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            color: #00695c;
+        }
+
+        .image-caption p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .back-button {
+            margin: 20px auto;
+            text-align: center;
+            width: auto;
+            height: 40px;
+        }
+
+        .colorful-button {
+            background-color: #4db6ac;
+            border: 2px solid #80cbc4;
+            color: #e0f2f1;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .colorful-button:hover {
+            background-color: #80cbc4;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-button">
+        <button class="colorful-button" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+    </div>
+    <div class="container">
+        <h1>High Storrs School, New Library Block</h1>
+        <div class="image-gallery">
+            <div class="image-card">
+                <img src="1.png" alt="Image 1">
+                <div class="image-caption">
+                    <h3>Image of Classroom, Library, and IT Suites</h3>
+                    <p>This image shows the library block view from the front.</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="2.png" alt="Image 2">
+                <div class="image-caption">
+                    <h3>Image of IT Suites</h3>
+                    <p>The IT suites were equipped with a sturdy network backbone, server rooms, and data storage facilities to ensure fast internet connectivity and dependable access to digital resources.</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="5.png" alt="Image 4">
+                <div class="image-caption">
+                    <h3>Image of Side view</h3>
+                    <p>The library room was specifically constructed to allow a range of activities, including solitary study, group talks, and research.</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="Capture.png" alt="Image 5">
+                <div class="image-caption">
+                    <h3>Architectural View of the New Library Block</h3>
+                    <p>The building envelope was optimized for energy efficiency and thermal comfort by incorporating passive design principles such as orientation, shading, and natural ventilation.</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="4.png" alt="Image 5">
+                <div class="image-caption">
+                    <h3>IT suite look</h3>
+                    <p>The building envelope was optimized for energy efficiency and thermal comfort by incorporating passive design principles such as orientation, shading, and natural ventilation.</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="6.png" alt="Image 5">
+                <div class="image-caption">
+                    <h3>Classroom with library</h3>
+                    <p>It will serve as a modern, flexible space for students and teachers. This new building will be strategically designed to cater to the needs of a growing student population and provide cutting-edge IT facilities to support digital learning initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
